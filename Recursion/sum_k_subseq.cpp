@@ -15,7 +15,9 @@ void sumk(int ind,vector<int> &A,vector<int> &ds,int n,int k,int sum){
 
     //pick condition
     ds.push_back(A[ind]);
-    sumk(ind+1,A,ds,n,k,sum+A[ind]);
+    sum+=A[ind];
+    sumk(ind+1,A,ds,n,k,sum);
+    sum-=A[ind];
     ds.pop_back();
 
     //non pick condition
