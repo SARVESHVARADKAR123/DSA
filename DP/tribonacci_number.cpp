@@ -39,6 +39,6 @@ public:
     int tribonacci(int n) {
         //vector<int>dp(n+1,-1);
         //return sol(n,dp);
-        return spcopt(n);
+        return spcopt(n);;
     }
 };
